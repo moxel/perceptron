@@ -10,6 +10,7 @@ child.expect('User')
 child.send('bot\n')
 child.expect('Password')
 child.send('scarlett-johansson\n')
+child.expect('Logged in')
 
 child = pexpect.spawn('moxel push -y ci-perceptron:latest', env=env, logfile=sys.stdout.buffer)
 try:
