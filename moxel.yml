@@ -1,15 +1,12 @@
-name: perceptron
+name: hello
 tag: latest
-image: conda2    # Docker environment to run the model with.
+image: python3    # Docker environment to run the model with.
 assets:                 # A list of Model files, such as weights.
 - model.json
 input_space:            # Input type annotations.
-  x1: float
-  x2: float
+  sentence: str
 output_space:           # Output type annotations.
-  out: float
+  sentiment: str
 main:                   # Main entrypoint to serve the model.
   type: python  
-  entrypoint: serve.py::predict
-                                    
-            
+  entrypoint: serve.py::predict           
