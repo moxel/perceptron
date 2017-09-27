@@ -6,7 +6,7 @@ assets:                 # A list of Model files, such as weights.
 input_space:            # Input type annotations.
   sentence: str
 output_space:           # Output type annotations.
-  sentiment: str
+  sentiment_x: str
 main:                   # Main entrypoint to serve the model.
   type: python  
   entrypoint: serve.py::predict           
