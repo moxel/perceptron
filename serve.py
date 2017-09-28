@@ -1,7 +1,11 @@
 import random
 import json
 
-model = json.load(open('model.json', 'r'))
+model1 = json.load(open('models/model1.json', 'r'))
+model2 = json.load(open('models/model2.json', 'r'))
+model = {}
+model.update(model1)
+model.update(model2)
 
 def predict(sentence):
     words = sentence.split(' ')

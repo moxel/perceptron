@@ -1,8 +1,8 @@
-name: hello
+name: bi-perceptron-dir
 tag: latest
 image: python3    # Docker environment to run the model with.
 assets:                 # A list of Model files, such as weights.
-- model.json
+- models
 input_space:            # Input type annotations.
   sentence: str
 output_space:           # Output type annotations.
