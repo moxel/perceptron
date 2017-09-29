@@ -1,7 +1,12 @@
 import random
 import json
+import argparse
 
-model = json.load(open('model.json', 'r'))
+parser = argparse.ArgumentParser('Parser')
+parser.add_argument('-m','--model', default='model.json', type=str)
+args = parser.parse_args()
+
+model = json.load(open(args.model, 'r'))
 
 def predict(sentence):
     words = sentence.split(' ')

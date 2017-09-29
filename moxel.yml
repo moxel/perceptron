@@ -1,4 +1,4 @@
-name: hello
+name: ci-perceptron-argparser
 tag: latest
 image: python3    # Docker environment to run the model with.
 assets:                 # A list of Model files, such as weights.
