@@ -1,4 +1,4 @@
-name: bi-perceptron-dir
+name: ci-perceptron-dir
 tag: latest
 image: python3    # Docker environment to run the model with.
 assets:                 # A list of Model files, such as weights.
@@ -6,7 +6,7 @@ assets:                 # A list of Model files, such as weights.
 input_space:            # Input type annotations.
   sentence: str
 output_space:           # Output type annotations.
-  sentiment_x: str
+  sentiment: str
 main:                   # Main entrypoint to serve the model.
   type: python  
   entrypoint: serve.py::predict           

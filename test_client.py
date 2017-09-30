@@ -1,6 +1,6 @@
 import moxel
 
-model = moxel.Model('strin/ci-perceptron-dir:latest', where='dev')
+model = moxel.Model('bot/ci-perceptron-dir:latest', where='dev')
 
 output = model.predict(sentence='happy')['sentiment']
 print('outpout:', output)
