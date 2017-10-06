@@ -1,6 +1,6 @@
 import moxel
 
-model = moxel.Model('strin/test:latest', where='localhost')
+model = moxel.Model('moxel/hello:latest', where='localhost')
 
-output = model.predict(x1="-1", x2=1.5)
-print(output['out'])
+output = model.predict(sentence="hello, i am happy")
+print(output['sentiment'])
