@@ -4,6 +4,7 @@ import json
 model = json.load(open('model.json', 'r'))
 
 def predict(sentence):
+    sentence = sentence.to_object()['sentence']
     words = sentence.split(' ')
     score = 0.
     for word in words:
